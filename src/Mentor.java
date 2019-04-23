@@ -7,12 +7,13 @@ public class Mentor{
     public int score;
     public int openings;
 
-    Mentor(int experienceLevel, String fieldOfWork, int timeAvailable, String mentorsSchool, int spotsOpen){
+    public Mentor(int experienceLevel, String fieldOfWork, int timeAvailable, String mentorsSchool){
         experience = experienceLevel;
         field = fieldOfWork;
         time = timeAvailable;
         school = mentorsSchool;
-        openings = spotsOpen;
+        preferences = new Mentee[100];
+        //openings = spotsOpen;
     }
 //    public void printMentor(){
 //        System.out.println("Degree: " + experience);

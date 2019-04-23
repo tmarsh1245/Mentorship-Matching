@@ -1,4 +1,4 @@
-public class Mentee {
+public class Mentee{
     public int experience;
     public String field;
     public int time;
@@ -6,11 +6,12 @@ public class Mentee {
     public Mentor[] preferences;
     public int score;
 
-    Mentee(int experienceLevel, String fieldOfWork, int timeAvailable, String mentorsSchool, int spotsOpen){
+    public Mentee(int experienceLevel, String fieldOfWork, int timeAvailable, String mentorsSchool){
         experience = experienceLevel;
         field = fieldOfWork;
         time = timeAvailable;
         school = mentorsSchool;
+        preferences = new Mentor[100];
     }
     public void printMentee(){
         System.out.println("Degree: " + experience);
