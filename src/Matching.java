@@ -1,9 +1,9 @@
 public class Matching {
-    public Mentor matchedMentor;
-    public Mentee matchedMentee;
+    public Mentor[] matchedMentors;
+    public Mentee[] matchedMentees;
 
-    public Matching(Mentor myMentor, Mentee myMentee){
-        matchedMentor = myMentor;
-        matchedMentee = myMentee;
+    public Matching(Mentor[] myMentor, Mentee[] myMentee){
+        matchedMentors = myMentor;
+        matchedMentees = myMentee;
     }
 }

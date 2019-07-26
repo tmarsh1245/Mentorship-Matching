@@ -1,17 +1,29 @@
 public class Mentee{
+    public String name;
     public int experience;
     public String field;
     public int time;
     public String school;
     public Mentor[] preferences;
     public int score;
+    public boolean matched;
+    public Mentor myMentor;
 
-    public Mentee(int experienceLevel, String fieldOfWork, int timeAvailable, String mentorsSchool){
+    public Mentee(String n,int experienceLevel, String fieldOfWork, int timeAvailable, String mentorsSchool){
+        name = n;
         experience = experienceLevel;
         field = fieldOfWork;
         time = timeAvailable;
         school = mentorsSchool;
-        preferences = new Mentor[100];
+        matched = false;
+    }
+
+    public void setPrefs(Mentor[] mentorsPref){
+        this.preferences = mentorsPref;
+    }
+
+    public void setMyMentor(Mentor m){
+        this.myMentor = m;
     }
     public void printMentee(){
         System.out.println("Degree: " + experience);
